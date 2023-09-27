@@ -32,10 +32,18 @@
 ```
 docker pull openos365/openos365-30001-nodejs-runtime-main-root:latest
 docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro openos365/openos365-30001-nodejs-runtime-main-root:latest bash
+
+podman pull docker.io/openos365/openos365-30001-nodejs-runtime-main-root:latest
+podman run -it docker.io/openos365/openos365-30001-nodejs-runtime-main-root:latest
+podman run -it docker.io/openos365/openos365-30001-nodejs-runtime-main-root:latest /sbin/init
 ```
 #### www
 
 ```
 docker pull openos365/openos365-30001-nodejs-runtime-main-www:latest
 docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro openos365/openos365-30001-nodejs-runtime-main-www:latest bash
+
+podman pull docker.io/openos365/openos365-30001-nodejs-runtime-main-www:latest:latest
+podman run -it docker.io/openos365/openos365-30001-nodejs-runtime-main-www:latest:latest
+podman run -it docker.io/openos365/openos365-30001-nodejs-runtime-main-www:latest:latest sudo /sbin/init
 ```
