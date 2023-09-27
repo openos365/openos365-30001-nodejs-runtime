@@ -31,11 +31,11 @@
 #### root
 ```
 docker pull openos365/openos365-30001-nodejs-runtime-main-root:latest
-docker run -it openos365/openos365-30001-nodejs-runtime-main-root:latest bash
+docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro openos365/openos365-30001-nodejs-runtime-main-root:latest bash
 ```
 #### www
 
 ```
 docker pull openos365/openos365-30001-nodejs-runtime-main-www:latest
-docker run -it openos365/openos365-30001-nodejs-runtime-main-www:latest bash
+docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro openos365/openos365-30001-nodejs-runtime-main-www:latest bash
 ```
