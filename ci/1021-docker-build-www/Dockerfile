@@ -1,4 +1,5 @@
 FROM openos365/openos365-10027-ubuntu-22-04-lts-docker-main-www:latest
+
 # 1
 COPY files/ /home/www/files/
 RUN chown -R www:www /home/www/files/
