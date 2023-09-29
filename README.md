@@ -59,4 +59,11 @@ docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro openos365/o
 podman pull docker.io/openos365/openos365-30001-nodejs-runtime-main-www:latest:latest
 podman run -it docker.io/openos365/openos365-30001-nodejs-runtime-main-www:latest:latest
 podman run -it docker.io/openos365/openos365-30001-nodejs-runtime-main-www:latest:latest sudo /sbin/init
+
+
+
+docker pull dockerhub.qingcloud.com/openos365/openos365-30001-nodejs-runtime-main-root:latest
+docker run -it --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro dockerhub.qingcloud.com/openos365/openos365-30001-nodejs-runtime-main-root:latest bash
+
+
 ```
